@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_register"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/background"
+                app:title=" "
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="რეგისტრაცია"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/big_text"
+                    />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar_register"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                app:boxBackgroundColor="@color/background"
+                app:boxStrokeColor="@color/background"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:cursorColor="@color/white"
+                android:layout_marginTop="@dimen/margin_top_big"
+                >
+
+                <EditText
+                    android:id="@+id/register_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text"
+                    android:textColor="@color/white"
+                    android:hint="სახელი"
+                    android:textColorHint="@color/white"
+                    android:inputType="textCapWords"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/register_one"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                app:boxBackgroundColor="@color/background"
+                app:boxStrokeColor="@color/background"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:cursorColor="@color/white"
+                android:layout_marginTop="@dimen/margin_top_small"
+                >
+
+                <EditText
+                    android:id="@+id/register_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text"
+                    android:textColor="@color/white"
+                    android:hint="გვარი"
+                    android:textColorHint="@color/white"
+                    android:inputType="textCapWords"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/register_two"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                app:boxBackgroundColor="@color/background"
+                app:boxStrokeColor="@color/background"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:cursorColor="@color/white"
+                android:layout_marginTop="@dimen/margin_top_small"
+                >
+
+                <EditText
+                    android:id="@+id/register_selfie_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text"
+                    android:textColor="@color/white"
+                    android:hint="სელფის სახელი"
+                    android:textColorHint="@color/white"
+                    android:inputType="textCapWords"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/register_three"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                app:boxBackgroundColor="@color/background"
+                app:boxStrokeColor="@color/background"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:cursorColor="@color/white"
+                android:layout_marginTop="@dimen/margin_top_small"
+                >
+
+                <EditText
+                    android:id="@+id/register_gmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text"
+                    android:textColor="@color/white"
+                    android:hint="მეილი"
+                    android:textColorHint="@color/white"
+                    android:inputType="textCapWords"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/register_four"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                app:boxBackgroundColor="@color/background"
+                app:boxStrokeColor="@color/background"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:cursorColor="@color/white"
+                android:layout_marginTop="@dimen/margin_top_small"
+                >
+
+                <EditText
+                    android:id="@+id/register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text"
+                    android:textColor="@color/white"
+                    android:hint="პაროლი"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/register_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toBottomOf="@id/register_five"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:civ_border_color="@color/background"
+                app:civ_border_width="2dp"
+                android:layout_marginTop="@dimen/margin_top_small"
+                android:src="@drawable/untitled_design__75_"
+                />
+
+
+            <android.widget.Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/register_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:background="@drawable/button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin_top_big"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:text="რეგისტრაცია"
+                android:textSize="@dimen/small_text"
+                android:textColor="@color/white"
+
+                />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

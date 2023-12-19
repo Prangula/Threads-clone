@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LogInActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_logIn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:title=" "
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="შესვლა"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_text"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_logIn"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+        app:boxBackgroundColor="@color/background"
+        app:boxStrokeColor="@color/background"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:cursorColor="@color/white"
+        android:layout_marginTop="@dimen/margin_top_big"
+        >
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/white"
+            android:hint="მეილი"
+            android:textColorHint="@color/white"
+            android:inputType="textCapWords"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/one"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                app:boxBackgroundColor="@color/background"
+                app:boxStrokeColor="@color/background"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:cursorColor="@color/white"
+                android:layout_marginTop="@dimen/margin_top_small"
+                >
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text"
+                    android:textColor="@color/white"
+                    android:hint="პაროლი"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/login_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="დაგავიწყდა პაროლი?"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginTop="@dimen/margin_top_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/two"
+                android:textColor="@color/background"
+                />
+
+
+            <TextView
+                android:id="@+id/login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="არ გაქვთ პირადი ანგარიში?"
+                android:layout_marginTop="@dimen/margin_top_big"
+                app:layout_constraintTop_toBottomOf="@id/login_forgot_password"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                />
+
+            <EditText
+                android:id="@+id/login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="რეგისტრაცია"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/login_text"
+                app:layout_constraintTop_toBottomOf="@id/login_forgot_password"
+
+                />
+
+
+            <android.widget.Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/login_register"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:background="@drawable/button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin_top_big"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:text="შესვლა"
+                android:textSize="@dimen/small_text"
+                android:textColor="@color/white"
+
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

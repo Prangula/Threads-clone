@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/search_item_name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        tools:text="Luka Prangulashvili"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top_big"
+        android:textColor="@color/background"
+        android:textSize="@dimen/big_text"
+        android:maxLines="2"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/search_item_selfie_name"
+        android:layout_width="230dp"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/search_item_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="5dp"
+        tools:text="prangula731"
+        android:textStyle="bold"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/background"
+        />
+
+    <android.widget.Button
+        android:id="@+id/search_item_profile_follow"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/search_item_selfie_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:text="დააფოლოვე"
+        android:textSize="@dimen/small_text"
+        android:textColor="@color/white"
+
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/search_item_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_end"
+        app:civ_border_color="@color/background"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="@dimen/margin_top_small"
+        tools:src="@drawable/untitled_design__75_"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Selfie</string>
+
+    <dimen name="big_text">20sp</dimen>
+    <dimen name="small_text">16sp</dimen>
+    <dimen name="margin_start">20dp</dimen>
+    <dimen name="margin_end">20dp</dimen>
+    <dimen name="margin_top_big">40dp</dimen>
+    <dimen name="margin_top_small">20dp</dimen>
+
+    <string name="default_notification_channel_id">channelId</string>
+
+
+</resources>

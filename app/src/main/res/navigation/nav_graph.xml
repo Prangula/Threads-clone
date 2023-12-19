@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.selfie.fragments.HomeFragment"
+        android:label="HomeFragment" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_loveFragment"
+            app:destination="@id/loveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.selfie.fragments.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.selfie.fragments.AddFragment"
+        android:label="AddFragment" />
+
+    <fragment
+        android:id="@+id/loveFragment"
+        android:name="com.example.selfie.fragments.LoveFragment"
+        android:label="LoveFragment" >
+        <action
+            android:id="@+id/action_loveFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.selfie.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+
+</navigation>
